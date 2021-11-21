@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+<body>
+    <h1>Welcome to Session counter</h1>
+    <div>
+    <p>Number of visits: <%=counter %> </p>
+
+    </div>
+    <div> 
+
+        <form method="POST" action="/addTwo">
+            <label for="addTwo">Add Two Counters</label>
+            <input name="addTwo" id="addTwo" type="submit" placeholder="add two counters"/>
+        </form>
+        </div>
+    <br>
+    <div>
+        <form action='/reset'method="post">
+            <div  >
+                <label for="reset">Reset</label>
+                <input type="submit" name="session" placeholder="reset">
+            </div>
+        </form>
+
+    </div>
+
+
+
+</body>
+
+
+
+</html>
